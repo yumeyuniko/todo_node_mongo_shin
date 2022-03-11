@@ -6,6 +6,7 @@ const taskRoute = require('./routes/tasks');
 const connectDB = require('./db/connect');
 
 app.use(express.json());
+app.use(express.static('./public'));
 
 const PORT = 5005;
 //Routing
